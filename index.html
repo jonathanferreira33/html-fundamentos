@@ -4,30 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos HTML 5 - Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href = "https://fonts.googleapis.com/css2? family = PT + Sans + Caption & display = swap" rel = "stylesheet">
+
 </head>
 
 <body>
-<ul>
+<ul id="menu__topo">
     <li><a href="index.html">home</a></li>
     <li><a href="contato.html">contato</a></li>
 </ul>    
 
-<h1>Sobre Jonathan:</h1>
-<p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sit tempore, quisquam odio minima
-    nemo nihil error velit voluptate iusto quos inventore aut? Ea dolor ab aliquid maiores inventore aut!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem asperiores quidem dicta suscipit
-    maxime quo quos optio at? Quaerat, illo? Eaque, inventore. Qui at delectus omnis atque doloribus facilis.
-</p>
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure officiis saepe quod neque, libero amet
-    temporibus doloribus. Repudiandae corporis mollitia a, enim vel eos, sunt, vero architecto incidunt ducimus odit!
-</p>
+    <h1>Sobre Jonathan:</h1>
 
-<img src="./assets/img/perfil.jpg" alt="fotografia Jonathan Ferreira
-" srcset="">
-<h2>Video:</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bffEFMXH6FM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>incorporado <a href="https://www.youtube.com/">Youtube</a></p>
+    <div class="flex-container">
+
+        <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sit tempore, quisquam odio minima
+                    nemo nihil error velit voluptate iusto quos inventore aut? Ea dolor ab aliquid maiores inventore aut!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem asperiores quidem dicta suscipit
+                    maxime quo quos optio at? Quaerat, illo? Eaque, inventore. Qui at delectus omnis atque doloribus facilis.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure officiis saepe quod neque, libero amet
+                    temporibus doloribus. Repudiandae corporis mollitia a, enim vel eos, sunt, vero architecto incidunt ducimus odit!
+                </p>
+        </div>
+        <div>
+                <img id="img__perfil" src="./assets/img/jonathanFerreira-01.jpg" alt="fotografia Jonathan Ferreira
+                " srcset="">
+        </div>
+        
+    </div>
+
+    <div class="video__">
+        <div>
+            <h2>Video:</h2>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bffEFMXH6FM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>incorporado <a href="https://www.youtube.com/">Youtube</figcaption>
+            <p></a></p>
+        </div>
+    </div>
+
+
+    <hr>
+    <footer class="footer"> 
+        <div class="container__footer">
+            <a href="https://www.linkedin.com/in/jferreira33/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/linkedin.png" alt="marca Linkedin" srcset="">
+            </a>
+
+            <a href="http://www.behance.net/jferreira33" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/behance.png" alt="marca Behance" srcset="">
+            </a>
+        </div>
+        <p class="container__footer">
+            Jonathan Ferreira &copy;
+        </p>
+    </footer>
+
+
 </body>
 </html>
