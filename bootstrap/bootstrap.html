@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Bootstrap 4</title>
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+                <strong>BS</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#escritores">
+                        <i class="fas fa-briefcase"></i>
+                        Escritores
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Livros
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Psicologia das cores</a>
+                        </li>
+                        <li>
+                            <a href="#">Ux Design</a>
+                        </li>
+                        <li>
+                            <a href="#livrosDesign">Design</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <button type="button" class="btn btn-primary FFBA08" data-toggle="modal" data-target="#exampleModalLogin">
+                        Login
+                      </button>
+                      <button type="button" class="btn btn-primary FFBA08" data-toggle="modal" data-target="#exampleModalCadastrar">
+                        Cadastrar
+                      </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Pop-up login -->
+        <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Senha</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pop-up cadastrar -->
+          <div class="modal fade" id="exampleModalCadastrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cadastre-se</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome</label>
+                            <input type="text" class="form-control" id="exampleInputTextoEmail" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Senha</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        </form>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Menu topo  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info FFBA08">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link c-FFBA08" href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link c-FFBA08" href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link c-FFBA08" href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div class="container-fluid">
+                    <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#mainSlider" data-slide-to="1"></li>
+                            <li data-target="#mainSlider" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Banner1 -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/banner-01.jpg" class="d-inline-block w-100" alt="Banner 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>#FFBA08</h2>
+                                    <p>R255     G186    B8</p>
+                                    <a href="https://coolors.co/370617-d00000-ffba08" class="main-btn" target="_blank" rel="noopener noreferrer">Conheça a paleta</a>
+                                </div>
+                            </div>
+                            <!-- Banner2 -->
+                            <div class="carousel-item">
+                                <img src="./img/banner-02.jpg" class="d-inline-block w-100" alt="Banner 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>#D00000</h2>
+                                    <p>R208     G0    B0</p>
+                                    <a href="https://coolors.co/370617-d00000-ffba08" class="main-btn" target="_blank" rel="noopener noreferrer">Conheça a paleta</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Banner3 -->
+                            <div class="carousel-item">
+                                <img src="./img/banner-03.jpg" class="d-inline-block w-100" alt="Banner 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>#370617</h2>
+                                    <p>R55     G6    B23</p>
+                                    <a href="https://coolors.co/370617-d00000-ffba08" class="main-btn" target="_blank" rel="noopener noreferrer">Conheça a paleta</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </main>
+
+            <!-- Conteudo  -->
+            <h2>Psicologia das Cores</h2>
+            <p>A psicologia das cores é o estudo que mostra a forma como nosso cérebro identifica e transforma as cores em sensações. A influencia das cores pode ser observada na publicidade, na decoração de casas e escritórios, na moda, na maneira como gostaríamos de ser vistos, entre outros. As cores são utilizadas também para que os logos e a identidade visual de uma marca seja lembrada pelo nosso cérebro.</p>
+            
+            <div class="line"></div>
+
+            <h2>O papel das cores no design</h2>
+            <p>Aos olhos do design, a psicologia das cores é fundamental para a composição de um layout e, se bem aplicada, torna-se um atrativo e proporciona maior eficácia ao material. É importante ressaltar que os estímulos proporcionados sofrem alteração de acordo com sua aplicação e combinação. O conceito de contraste é muito bem utilizado pelos profissionais, enriquecendo ainda mais as peças de comunicação. Porém, para que as cores sejam trabalhadas de forma eficiente, é necessário observar: a relação da cor com o tema; a ordem de leitura da página; o perfil do público alvo; os objetivos da comunicação; entre outros.</p>
+
+            <div class="line"></div>
+
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <!-- Cards -->
+            <h2 class="font-weight-bold mb-2" id="escritores">Alguns escritores</h2>
+                 <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        
+                    <div class="row pb-5 mb-4">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <!-- Card-->
+                            <div class="card shadow-sm border-0 rounded">
+                                <div class="card-body p-0"><img src="./img/Eva Heller-01.jpg" alt="" class="w-100 card-img-top">
+                                    <div class="p-4">
+                                    <h5 class="mb-0">Eva Heller</h5>
+                                    <p class="small text-muted">Escritora e cientista social.</p>
+                                    <ul class="social mb-0 list-inline mt-3">
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div class="card shadow-sm border-0 rounded">
+                            <div class="card-body p-0"><img src="./img/Carol Dweck-01.jpg" alt="" class="w-100 card-img-top">
+                                <div class="p-4">
+                                    <h5 class="mb-0">Carol Dweck</h5>
+                                    <p class="small text-muted">Psicóloga</p>
+                                    <ul class="social mb-0 list-inline mt-3">
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div class="card shadow-sm border-0 rounded">
+                            <div class="card-body p-0"><img src="./img/Valcapelli-01.jpg" alt="" class="w-100 card-img-top">
+                                <div class="p-4">
+                                    <h5 class="mb-0">Valcapelli</h5>
+                                    <p class="small text-muted">Psicólogo</p>
+                                    <ul class="social mb-0 list-inline mt-3">
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <!-- Card-->
+                        <div class="card shadow-sm border-0 rounded">
+                            <div class="card-body p-0"><img src="./img/Steve-Krug-01.jpg" alt="" class="w-100 card-img-top">
+                                <div class="p-4">
+                                    <h5 class="mb-0">Steve Krug</h5>
+                                    <p class="small text-muted">UX Designer</p>
+                                    <ul class="social mb-0 list-inline mt-3">
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+    
+
+                    <!-- Produtos -->
+                    <h2 class="font-weight-bold mb-2" id="">Livros</h2>
+                        <p class="font-italic text-muted mb-4" id="livrosDesign">Design</p>
+                        
+                        <div class="row pb-5 mb-4">
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-0">
+                                    <div class="card-body p-4"><img src="./img/Design emocional-01.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                                        <h5> <a href="#" class="text-dark">Design Emocional</a></h5>
+                                        <p class="small text-muted font-italic">Donald A. Norman</p>
+                                        <ul class="list-inline small">
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-0">
+                                    <div class="card-body p-4"><img src="./img/O design do dia a dia-01.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                                        <h5> <a href="#" class="text-dark">O Design do Dia a Dia</a></h5>
+                                        <p class="small text-muted font-italic">Donald A. Norman</p>
+                                        <ul class="list-inline small">
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-0">
+                                    <div class="card-body p-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <ul class="list-inline small">
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-0">
+                                    <div class="card-body p-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <ul class="list-inline small">
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+
+        
+        
+
+    
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
